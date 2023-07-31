@@ -39,7 +39,7 @@ test("PUT /movies/:id should update the movie of this id ", async () => {
 });
 
 //SET ACTORS TEST==============================================================================
-test("POST /movies/:id/actors should stablish the actors of this id movie", async () => {
+test("POST /movies/:id/actors should stablish the actors of this movie id", async () => {
   const actors = await Actor.create({
     firstName: "Braian actor",
     lastName: "Gil",
@@ -56,7 +56,7 @@ test("POST /movies/:id/actors should stablish the actors of this id movie", asyn
   await actors.destroy();
 });
 //SET DIRECTORS TEST==============================================================================
-test("POST /movies/:id/directors should stablish the directors of this id movie", async () => {
+test("POST /movies/:id/directors should stablish the directors of this movie id", async () => {
   const directors = await Director.create({
     firstName: "Braian director",
     lastName: "Gil",
@@ -75,7 +75,7 @@ test("POST /movies/:id/directors should stablish the directors of this id movie"
   await directors.destroy();
 });
 //SET GENRES TEST==============================================================================
-test("POST /movies/:id/genres should stablish the genres of this id movie", async () => {
+test("POST /movies/:id/genres should stablish the genres of this movie id", async () => {
   const genres = await Genre.create({
     name: "Documental",
   });

@@ -8,7 +8,7 @@ test("GET /genres should bring all the genres", async () => {
   expect(res.status).toBe(200);
 });
 
-test("POST /genres should create an genre", async () => {
+test("POST /genres should create a genre", async () => {
   const body = {
     name: "Comedy",
   };
